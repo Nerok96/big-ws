@@ -20,8 +20,8 @@ public class TranslatorServiceTest {
     TranslatorService translatorService;
     @Test
     public void translateTest() throws Exception {
-        TranslatedText translatedText = translatorService.translate("en", "es", "This is a test of translation service");
-        assertEquals("Esto es una prueba de servicio de traducción",translatedText.getTranslation());
+        TranslatedText translatedText = translatorService.translate("en", "es", "I have a green house in a red city within a yellow country.");
+        assertEquals("Tengo una casa verde en una ciudad roja dentro de un amarillo país.",translatedText.getTranslation());
     }
 
 }
